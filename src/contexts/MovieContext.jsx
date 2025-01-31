@@ -14,8 +14,7 @@ export const MovieProvider = ({ children }) => {
 
   useEffect(() => {
     localStorage.setItem("favourites", JSON.stringify(favourites));
-  }, [favourites]);
-
+  }, [favourites]);0
   // Local storage can only contain strings, therefore we need to be able to convert to/from this with JSON methods in both useEffects above
 
   const addToFavourites = (movie) => {
